@@ -1,0 +1,414 @@
+/* 清除默认样式*/
+*{
+	margin: 0;
+	padding: 0;
+}
+/*修复高度塌陷*/
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+	
+}
+/*给用户信息栏设置样式userBar*/
+#userBar{
+	width: 1520px;
+	height: 35.4px;
+	margin: 0 auto;
+	padding-top: 14.6px;
+	background-color: #f2f2f2;
+	
+}
+
+/*给用户信息栏左侧设置样式ub01*/
+#userBar #ub01{
+	margin-left: 150px;
+	
+}
+/*给左侧标题设置样式*/
+#userBar #ub01 p{
+	float: left;
+}
+/*给左侧超链接设置样式*/
+#userBar #ub01 a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	float: left;
+	margin-left: 10px;
+}
+/*鼠标移入链接，变红效果*/
+#ub01 a:hover{
+	color: red;
+}
+
+/*给用户信息栏设置样式ub02*/
+#userBar #ub02{
+	list-style: none;
+	width: 561px;
+	float: right;
+	margin-right: 150px;
+	
+}
+/*给右侧列表项设置样式*/
+#userBar #ub02 li{
+	width: 80px;
+	float: left;
+}
+/*给第四个li设置一个小左边框*/
+#userBar #ub02 #L4{
+	border-left: 1px solid black;
+}
+/*给右侧超链接设置样式*/
+#userBar #ub02 a{
+	display: block;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+}
+/*鼠标移入链接，变红效果*/
+#ub02 a:hover{
+	color: red;
+}
+/* 用户信息栏设置完毕*/
+
+
+/*给头部信息栏设置样式*/
+#header{
+	width: 1520px;
+	
+	margin: 0 auto;
+	
+	
+}
+/*给头部信息栏左侧logo设置样式*/
+#header #logo{
+	width: 240px;
+	height: 130px ;
+	margin-left: 140px;
+	
+	
+	float: left;
+	
+}
+/*给图片设置大小*/
+#header #logo img{
+	width: 240px;
+	height: 130px;
+	
+}
+
+/*给头部信息栏右侧搜索框设置样式*/
+#header #search{
+	width: 700px;
+	height: 83px;
+	margin-left: 125px;
+	padding-top: 47px;
+	
+	float: left;
+}
+/*给表单设置样式*/
+#header #search input{
+	border: 2px solid #ff0036;
+	width: 490px;
+	height: 36px;
+}
+#header #search button{
+	width: 132px;
+	height: 36px;
+	border: none;
+	background-color: #ff0036;
+}
+#header #search button p{
+	color: white;
+}
+/* 头部信息栏设置完毕*/
+
+/*给服务信息栏设置样式*/
+#service{
+	width: 1520px;
+	
+	margin: 0 auto;
+	
+}
+/*给服务信息栏s01设置样式*/
+#service #s01{
+	width: 200px;
+	height: 36px;
+	background-color: #FF0036;
+	margin-left: 160px;
+	float: left;
+}
+#service #s01 p{
+	color: #FFFFFF;
+	text-align: center;
+	margin: 7.6px;
+}
+/*给服务信息栏s02设置样式*/
+#service #s02{
+	width:1040px;
+	height: 36px;
+	
+	float: left;
+	
+	
+	
+}
+#service #s02 .w1{
+	width: 100px;
+	height: 36px;
+	margin-left: 20px;
+	list-style: none;
+	
+	float: left;
+}
+#service #s02 .w2{
+	width: 100px;
+	height: 28.4px;
+	list-style: none;
+	text-align: center;
+	float: left;
+	margin-top: 7.6px;
+	
+}
+#service #s02 li a{
+	text-decoration: none;
+}
+#service #s02 .w1 img{
+	width: 100px;
+	height: 36px;
+}
+
+/* 头部信息栏设置完毕*/
+
+/*给内容区设置样式*/
+
+#content {
+	width: 1520px;
+	height: 500px;
+	margin: 0 auto;
+	/*background-color: yellowgreen;*/
+	background-image: url(../img/pageback.jpeg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/*给菜单栏设置样式*/
+#content #menu{
+	width: 200px;
+	height: 500px;
+	/*background-color: deepskyblue;*/
+	margin-left: 160px;
+	float: left;
+	
+	
+}
+
+/*给菜单列表项设置样式*/
+#content #menu #c1{
+	width: 200px;
+	height: 500px;
+	list-style: none;
+}
+
+#content #menu #c1 li{
+	width: 200px;
+	height: 31.25px;
+	text-align: center;
+	background-color: #696969;
+}
+/*列表项超链接设置样式*/
+#content #menu #c1 li a{
+	text-decoration: none;
+	
+	
+}
+
+/*给商品仓库设置样式*/
+img{
+	width: 800px;
+	height: 500px;
+}
+#warehouse {
+	width: 800px;
+	height: 500px;
+	position: relative;
+	float: left;
+	/*设置隐藏，轮播图效果*/
+	overflow: hidden;
+	
+}
+#warehouse #watch{
+	list-style: none;
+	width: 4800px;
+	height:500px ;
+	position: absolute;
+	left: -4000px;
+}
+#page1{
+	width: 800px;
+	height: 500px;
+	float: left;
+}
+#page1 .pageimg01{
+	width: 800px;                           
+	height: 500px;
+}
+
+#page2{
+	width: 800px;
+	height: 500px;
+	float: left;
+}
+#page2 .pageimg02{
+	width: 800px;
+	height: 500px;
+}
+
+#page3{
+	width: 800px;
+	height: 500px;
+	float: left;
+}
+#page3 .pageimg03{
+	width: 800px;
+	height: 500px;
+}
+#page4{
+	width: 800px;
+	height: 500px;
+	float: left;
+}
+#page4 .pageimg04{
+	width: 800px;
+	height: 500px;
+}
+
+#page5{
+	width: 800px;
+	height: 500px;
+	float: left;
+}
+#page5 .pageimg05{
+	width: 800px;
+	height: 500px;
+}
+/*可能存在bug*/
+/*应该是可以不设置的，直接将watch的left值设置为-4800px*/
+#page0{
+	width: 800px;
+	height: 500px;
+	float: left;
+}
+#page0 .nopage{
+	width: 800px;
+	height: 500px;
+}
+#page0 .nopage img{
+	/*给最后一张图片设置透明*/
+	opacity: 0;
+}
+
+/*给底部信息栏设置样式*/
+#footer{
+	width: 1520px;
+	height: 1000px;
+	margin: 0 auto;
+	/*background-color: deepskyblue;*/
+	
+}
+
+/*给承诺栏设置样式*/
+#footer #promise{
+	width: 1520px;
+	height: 130px;
+	padding-top: 10px;
+	/*background-color: yellow;*/
+}
+
+#footer #promise a{
+	text-decoration: none;
+	float: left;
+	margin-left: 15px;
+	margin-right: 15px;
+	
+}
+
+#footer #promise a img{
+	width: 350px;
+	height: 120px;
+}
+
+/**给指南栏设置样式*/
+#guide{
+	width: 1520px;
+	height: 300px;
+	/*background-color: deeppink;*/
+	
+}
+
+#guide dt{
+	width: 180px;
+	height: 30px;
+}
+#guide dd{
+	width: 180px;
+	height: 250px;
+	/*background-color: blue;*/
+}
+
+#guide a{
+	text-decoration: none;
+	display: block;
+	margin-bottom: 10px;
+	
+}
+#guide #guide01{
+	width: 180px;
+	height: 280px;
+	float: left;
+	text-align: center;
+	margin: 10px 100px;
+	/*background-color: red;*/
+	
+}
+#guide #guide02{
+	width: 180px;
+	height: 280px;
+	float: left;
+	text-align: center;
+	margin: 10px 100px;
+	/*background-color: greenyellow;*/
+}
+#guide #guide03{
+	width: 180px;
+	height: 280px;
+	float: left;
+	text-align: center;
+	margin: 10px 100px;
+	/*background-color: deepskyblue;*/
+}
+#guide #guide04{
+	width: 180px;
+	height: 280px;
+	float: left;
+	text-align: center;
+	margin: 10px 100px;
+	/*background-color: greenyellow;*/
+}
+
+
+
+
+/*给帮助栏设置样式*/
+#help{
+	width: 1520px;
+	height: 303px;
+	background-color: #000000;
+	text-align: center;
+}
+#help p{
+	color: #ffffff;
+	width: 1520px;
+	height: 100px;
+	border: 1px solid red;
+}

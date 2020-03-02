@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/page.css"/>
+		<script type="text/javascript">
+			window.onload=function(){
+				var liA=document.getElementById("c1").getElementsByTagName("li");
+				var target =document.getElementById("watch");
+				console.log(liA);
+				var timer;
+				for(var i=0;i<liA.length;i++){
+					liA[i].num=i;
+					//绑定鼠标移入时间响应
+					liA[i].onmouseover=function(){
+						this.style.backgroundColor="#ffffff";
+						target.style.left=	(-800)*this.num +"px";
+						
+					}
+					//绑定鼠标移出时间响应
+					liA[i].onmouseout=function(){
+						this.style.backgroundColor="#696969";
+						//target.style.left =-4800+"px";
+						clearTimeout(timer);
+						 timer =setTimeout(function(){
+							change(this);
+						},3000)
+						
+					}
+						
+					
+					
+				   
+				}
+				function change(obj){
+					target.style.left = -4000+ "px" ;
+				}
+				
+				
+			}
+			
+			
+		</script>
+		
+		
+	</head>
+	<body>
+		<!--创建用户信息栏userBar-->
+		<div id="userBar">
+			<!--创建用户信息栏左侧ub01-->
+			<div id="ub01">
+				<p>喵，欢迎来天猫</p>
+				<a href="#">请登录</a>
+				<a href="#">免费注册</a>
+			</div>
+			<!--创建用户信息栏右侧ub02-->
+			<ul id="ub02">
+				<li><a href="#">我的淘宝</a></li>
+				<li><a href="#">购物车</a></li>
+				<li><a href="#">收藏夹</a></li>
+				<li id="L4"><a href="#">手机版</a></li>
+				<li><a href="#">淘宝网</a></li>
+				<li><a href="#">商家交易</a></li>
+				<li><a href="#">网站导航</a></li>
+			</ul>			
+		</div>
+		
+		<!--创建头部信息栏-->
+		<div id="header" class="clearfix">
+			<!--logo区域-->
+			<div id="logo">
+				<img src="img/logo.png" >
+			</div>
+			
+			<!--搜索框-->
+			
+			<div id="search">
+				<input type="text"  placeholder="搜索 天猫 商品/品牌/店铺" />
+				<button type="button"><p>搜索</p></button>
+			</div>
+					
+		</div>
+		
+		<!--创建服务信息栏-->
+		<div id="service" class="clearfix">
+			<!--左侧大标题s01-->
+			<div id="s01">
+				<p>商品分类</p>
+			</div>
+			<!--右侧服务列表-->
+			<ul id="s02"  >
+				<li class="w1"><a href="#"><img src="img/02.png" ></a></li>
+				<li class="w1"><a href="#"><img src="img/01.png" ></a></li>
+				<li class="w2"><a href="#">天猫会员</a></li>
+				<li class="w2"><a href="#">电器城</a></li>
+				<li class="w2"><a href="#" >喵鲜生</a></li>
+				<li class="w2"><a href="#">医药馆</a></li>
+				<li class="w2"><a href="#">营业厅</a></li>
+				<li class="w2"><a href="#">魅力惠</a></li>
+				<li class="w2"><a href="#">飞猪旅行</a></li>
+				<li class="w2"><a href="#">苏宁易购</a></li>
+			</ul>
+			
+		</div>
+		
+		<!--创建内容区-->
+		<div id="content" class="clearfix">
+			<!--创建菜单栏-->
+			<div id="menu">
+				<ul id="c1">
+					<li><a href="#">女装 /内衣</a></li>
+					<li><a href="#">男装 /运动户外</a></li>
+					<li><a href="#">男鞋 /女鞋 /箱包</a></li>
+					<li><a href="#">美妆 /个人护理</a></li>
+					<li><a href="#">腕表 /眼镜 /珠宝首饰</a></li>
+					<li><a href="#">手机 /数码 /电脑办公</a></li>
+					<li><a href="#">母婴玩具</a></li>
+					<li><a href="#">零食 /茶酒 /进口食品</a></li>
+					<li><a href="#">生鲜水果</a></li>
+					<li><a href="#">大家电 /生活电器</a></li>
+					<li><a href="#">家具建材</a></li>
+					<li><a href="#">汽车 /配件 /用品</a></li>
+					<li><a href="#">家纺 /家饰 /鲜花</a></li>
+					<li><a href="#">医药保健</a></li>
+					<li><a href="#">厨具 /收纳 /宠物</a></li>
+					<li><a href="#">图书音像</a></li>
+				</ul>
+				
+			</div>
+			
+			<div id="warehouse">
+				
+				<ul id="watch">
+					
+					<li id="page1">
+						<div class="pageimg01">
+							<img src="img/page01.png" >
+						</div>
+					</li>
+					
+					<li id="page2">
+						<div class="pageimg02">
+							<img src="img/page02.png" >
+						</div>
+					</li>
+					
+					<li id="page3">
+						<div class="pageimg03">
+							<img src="img/page03.png" >
+						</div>
+					</li>
+					
+										
+					<li id="page4">
+						<div class="pageimg04">
+							<img src="img/page04.png" >
+						</div>
+					</li>
+					
+					<li id="page5">
+						<div class="pageimg05">
+							<img src="img/page05.png" >
+						</div>
+					</li>
+					<!--设置最后一张图片为透明，在主页上,可能存在bug-->
+					<li id="page0">
+						<div class="nopage">
+							<img src="img/nopage.png" >
+						</div>
+					</li>
+					
+				</ul>
+				
+				
+			</div>
+			
+			
+		<!--内容区创建结束-->
+			
+			
+		</div>
+		
+		<!--创建底部信息栏-->
+		<div id="footer">
+			<!--创建承诺栏-->
+			<div id="promise">
+				<a href="#"><img src="img/foot01.png" ></a>
+				<a href="#"><img src="img/foot02.png" ></a>
+				<a href="#"><img src="img/foot03.png" ></a>
+				<a href="#"><img src="img/foot04.png" ></a>
+				
+			</div>
+			
+			<!--创建指南栏-->
+			<div id="guide">
+				<dl id="guide01">
+					<dt>
+						<span id="" style="font-size: 20px;">
+							购物指南
+						</span>
+					</dt>
+					<dd>
+						<a href="#">免费注册</a> 
+						<a href="#">开通支付宝</a> 
+						<a href="#">支付宝充值</a>
+					</dd>
+				</dl>
+				
+				<dl id="guide02">
+					<dt>
+						<span id="" style="font-size: 20px;">
+							天猫保障
+						</span>
+					</dt>
+					<dd>
+						<a href="#">发票保障</a> 
+						<a href="#">售后规则</a> 
+						<a href="#">缺货赔付</a>
+					</dd>
+				</dl>
+				
+				<dl id="guide03">
+					<dt>
+						<span id="" style="font-size: 20px;">
+							支付方式
+						</span>
+					</dt>
+					<dd>
+						<a href="#">快捷支付</a> 
+						<a href="#">信用卡</a> 
+						<a href="#">余额宝</a> 
+						<a href="">蚂蚁花呗</a> 
+						<a href="#">货到付款</a>
+					</dd>
+				</dl>
+				
+				<dl id="guide04">
+					<dt>
+						<span id="" style="font-size: 20px;">
+							商家服务
+						</span>
+					</dt>
+					<dd>
+						<a href="#">天猫规则</a> 
+						<a href="#">商品入住</a> 
+						<a href="#">商家中心</a> 
+						<a href="#">天猫智库</a> 
+						<a href="#">物流服务</a> 
+						<a href="#">商家中心</a> 
+						<a href="#">喵言喵语</a> 
+						<a href="#">运营服务</a> 
+					</dd>
+				</dl>
+				
+				
+				
+			</div>
+			
+			<!--创建帮助栏-->
+			<div id="help">
+				<!--网站信息-->
+				<p >
+					网站信息
+				</p>
+				<!--企业友情链接-->
+				<p>
+					友情链接
+				</p>
+				<!--版权信息-->
+				<p>
+					版权信息
+				</p>
+			</div>
+			
+		</div>
+		
+		
+		
+		
+		
+		
+	</body>
+</html>
